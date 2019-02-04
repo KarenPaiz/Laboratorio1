@@ -1,0 +1,21 @@
+﻿@model WebApplication1.Models.Game[]
+@{
+                /**/
+
+                ViewBag.Title = "MostrarJuego";
+                Layout = "~/Views/Shared/_Layout.cshtml";
+                //"~/Views/_ViewStart.cshtml";
+}
+<h2> Lista de juegos </h2>
+@for (int i = 0; i < 6; i++)
+{
+    <h4>ID: @Model[i].Id. //  Juego: @Model[i].Nombre.  //  Puntuacion: @Model[i].Puntuacion. //  Categoria:  @Model[i].Categoria. //  Estudio: @Model[i].Estudio.  //  Año: @Model[i].Año.   </h4>
+
+}
+<h1></h1>
+<h5>@Model[0].ResultadoTiempo</h5>
+<h5>@Model[2].ResultadoTiempo</h5>
+<h5>@Model[1].ResultadoTiempo</h5>
+<h5>@Model[0].ResultadoPID</h5>
+
+

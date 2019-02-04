@@ -1,0 +1,74 @@
+﻿@model WebApplication1.Models.Game
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Game</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Puntuacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Puntuacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Categoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estudio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estudio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Año)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Año)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ResultadoTiempo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResultadoTiempo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ResultadoPID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResultadoPID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
